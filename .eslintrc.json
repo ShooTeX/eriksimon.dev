@@ -5,6 +5,7 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb/whitespace",
+    "plugin:unicorn/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:prettier/recommended"
   ],

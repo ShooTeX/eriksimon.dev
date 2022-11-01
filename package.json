@@ -30,6 +30,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-tailwindcss": "^3.6.2",
+    "eslint-plugin-unicorn": "^44.0.2",
     "prettier": "^2.7.1",
     "typescript": "4.8.4"
   }
