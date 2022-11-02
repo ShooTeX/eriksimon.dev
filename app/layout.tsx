@@ -1,4 +1,7 @@
 /* eslint-disable @next/next/no-head-element */
+import localFont from "@next/font/local";
+
+const iosevka = localFont({ src: "./fonts/iosevka-regular.woff2" });
 
 export default function RootLayout({
   children,
@@ -8,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body className={iosevka.className}>{children}</body>
     </html>
   );
 }
