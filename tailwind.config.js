@@ -3,6 +3,8 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
+      transparent: "transparent",
+      current: "currentColor",
       white: "#FFF",
       black: "#000",
       orange: "#fcbf49",
