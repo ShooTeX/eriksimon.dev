@@ -19,18 +19,20 @@ export default async function Home() {
     .replace(" ", "");
   return (
     <div className="h-screen flex flex-col">
-      <div className="my-auto flex space-y-9 flex-col max-w-xl">
+      <div className="my-auto flex space-y-9 flex-col max-w-none xl:max-w-xl">
         <div className="w-fit">
           <div className="inline-flex items-end">
-            <span className="text-orange text-6xl mr-4">{">>"}</span>
+            <span className="text-orange text-8xl xl:text-6xl mr-4">
+              {">>"}
+            </span>
             <div>
               <span>Hi, I&apos;m</span>
-              <h1 className="text-orange text-6xl">ERIKSIMON</h1>
+              <h1 className="text-orange text-8xl xl:text-6xl">ERIKSIMON</h1>
             </div>
             <span className="italic">.dev</span>
           </div>
           <div className="flex items-center">
-            <div className="h-4 bg-orange flex-1 mr-3" />
+            <div className="h-8 xl:h-4 bg-orange flex-1 mr-3" />
             <div className="text-orange flex space-x-3">
               <a href="https://linkedin.com/in/erik-simon-059496173/">
                 <FontAwesomeIcon icon={faLinkedin} />

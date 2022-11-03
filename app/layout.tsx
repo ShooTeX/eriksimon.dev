@@ -15,7 +15,7 @@ export default function RootLayout({
       <head>
         <title>eriksimon.dev</title>
       </head>
-      <body className="bg-green text-yellow text-lg px-4 container sm:px-[20%] sm:max-w-none mx-auto">
+      <body className="bg-green text-yellow text-3xl xl:text-lg px-4 container xl:px-[20%] xl:max-w-none mx-auto">
         {children}
       </body>
     </html>

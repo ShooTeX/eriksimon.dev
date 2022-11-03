@@ -17,7 +17,7 @@ import GraphqlIcon from "../../public/icons/graphql.svg";
 
 export function TechnologiesRow() {
   return (
-    <div className="flex justify-between items-center text-xl">
+    <div className="flex justify-between items-center text-3xl xl:text-xl">
       <TsIcon />
       <JsIcon />
       <HtmlIcon />
