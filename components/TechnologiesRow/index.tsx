@@ -1,34 +1,39 @@
-import Image from "next/image";
+import TsIcon from "../../public/icons/ts.svg";
+import JsIcon from "../../public/icons/js.svg";
+import HtmlIcon from "../../public/icons/html.svg";
+import CssIcon from "../../public/icons/css.svg";
+import VimscriptIcon from "../../public/icons/vimscript.svg";
+import LuaIcon from "../../public/icons/lua.svg";
+import ShellIcon from "../../public/icons/shell.svg";
+import DartIcon from "../../public/icons/dart.svg";
+import NextIcon from "../../public/icons/next.svg";
+import AngularIcon from "../../public/icons/angular.svg";
+import VueIcon from "../../public/icons/vue.svg";
+import ReactNativeIcon from "../../public/icons/react-native.svg";
+import FlutterIcon from "../../public/icons/flutter.svg";
+import PrismaIcon from "../../public/icons/prisma.svg";
+import TrpcIcon from "../../public/icons/trpc.svg";
+import GraphqlIcon from "../../public/icons/graphql.svg";
 
 export function TechnologiesRow() {
   return (
-    <div className="flex justify-between items-center">
-      <Image src="/icons/ts.svg" width={20} height={20} alt="typescript" />
-      <Image src="/icons/js.svg" width={20} height={20} alt="javascript" />
-      <Image src="/icons/html.svg" width={20} height={20} alt="html" />
-      <Image src="/icons/css.svg" width={20} height={20} alt="typescript" />
-      <Image
-        src="/icons/vimscript.svg"
-        width={20}
-        height={20}
-        alt="vimscript"
-      />
-      <Image src="/icons/lua.svg" width={20} height={20} alt="lua" />
-      <Image src="/icons/shell.svg" width={20} height={20} alt="shell" />
-      <Image src="/icons/dart.svg" width={20} height={20} alt="dart" />
-      <Image src="/icons/next.svg" width={20} height={20} alt="next" />
-      <Image src="/icons/angular.svg" width={20} height={20} alt="angular" />
-      <Image src="/icons/vue.svg" width={20} height={20} alt="vue" />
-      <Image
-        src="/icons/react-native.svg"
-        width={20}
-        height={20}
-        alt="react-native"
-      />
-      <Image src="/icons/flutter.svg" width={20} height={20} alt="flutter" />
-      <Image src="/icons/prisma.svg" width={20} height={20} alt="prisma" />
-      <Image src="/icons/trpc.svg" width={20} height={20} alt="trpc" />
-      <Image src="/icons/graphql.svg" width={20} height={20} alt="graphql" />
+    <div className="flex justify-between items-center text-xl">
+      <TsIcon />
+      <JsIcon />
+      <HtmlIcon />
+      <CssIcon />
+      <VimscriptIcon />
+      <LuaIcon />
+      <ShellIcon />
+      <DartIcon />
+      <NextIcon />
+      <AngularIcon />
+      <VueIcon />
+      <ReactNativeIcon />
+      <FlutterIcon />
+      <PrismaIcon />
+      <TrpcIcon />
+      <GraphqlIcon />
     </div>
   );
 }
