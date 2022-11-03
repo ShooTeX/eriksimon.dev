@@ -11,13 +11,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={iosevka.className}>
       <head>
         <title>eriksimon.dev</title>
       </head>
-      <body
-        className={`${iosevka.className} bg-green text-yellow text-lg px-4 container sm:px-[20%] sm:max-w-none mx-auto`}
-      >
+      <body className="bg-green text-yellow text-lg px-4 container sm:px-[20%] sm:max-w-none mx-auto">
         {children}
       </body>
     </html>
