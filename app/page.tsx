@@ -6,7 +6,17 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TechnologiesRow } from "../components/TechnologiesRow";
 
-export default function Home() {
+async function getProfileString() {
+  const result = await fetch(process.env.LINKEDIN_API_URL);
+
+  return result.text();
+}
+
+export default async function Home() {
+  const profileString = await getProfileString();
+  const company = profileString
+    .slice(profileString.indexOf("@"), profileString.length)
+    .replace(" ", "");
   return (
     <div className="h-screen flex flex-col">
       <div className="my-auto flex space-y-9 flex-col max-w-xl">
@@ -36,7 +46,7 @@ export default function Home() {
         </div>
         <p>
           <span className="italic">
-            currently <span className="text-red">@company</span>
+            currently <span className="text-red">{company}</span>
           </span>
           <br />
           <br />

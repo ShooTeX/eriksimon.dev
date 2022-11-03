@@ -12,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
+      <head>
+        <title>eriksimon.dev</title>
+      </head>
       <body
         className={`${iosevka.className} bg-green text-yellow text-lg px-4 container sm:px-[20%] sm:max-w-none mx-auto`}
       >
