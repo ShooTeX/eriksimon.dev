@@ -14,8 +14,8 @@ export default function RootLayout({
     <html lang="en" className={iosevka.className}>
       <head>
         <title>eriksimon.dev</title>
-        <meta name="theme-color" content="FCBF49" />
-        <meta name="msapplication-TileColor" content="FCBF49" />
+        <meta name="theme-color" content="#FCBF49" />
+        <meta name="msapplication-TileColor" content="#FCBF49" />
       </head>
       <body className="bg-green text-yellow text-3xl xl:text-lg px-4 container xl:px-[20%] xl:max-w-none mx-auto">
         {children}
