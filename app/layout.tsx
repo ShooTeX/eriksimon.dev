@@ -3,7 +3,10 @@ import localFont from "@next/font/local";
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
-const iosevka = localFont({ src: "./fonts/iosevka-regular.woff2" });
+const iosevka = localFont({
+  src: "./fonts/iosevka-regular.woff2",
+  preload: true,
+});
 
 export default function RootLayout({
   children,
