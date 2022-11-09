@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const iosevka = localFont({
   src: "./fonts/iosevka-regular.woff2",
-  preload: true,
+  display: "swap",
 });
 
 export default function RootLayout({
