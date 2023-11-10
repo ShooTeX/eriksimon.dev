@@ -6,17 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TechnologiesRow } from "../components/TechnologiesRow";
 
-async function getProfileString() {
-  const result = await fetch(process.env.LINKEDIN_API_URL);
-
-  return result.text();
-}
-
 export default async function Home() {
-  const profileString = await getProfileString();
-  const company = profileString
-    .slice(profileString.indexOf("@"), profileString.length)
-    .replace(" ", "");
   return (
     <div className="h-screen flex flex-col">
       <div className="my-auto flex space-y-9 flex-col max-w-none xl:max-w-xl">
@@ -48,7 +38,7 @@ export default async function Home() {
         </div>
         <p>
           <span className="italic">
-            currently <span className="text-red">{company}</span>
+            currently <span className="text-red">@air up®</span>
           </span>
           <br />
           <br />
